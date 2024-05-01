@@ -1,34 +1,39 @@
 # Installation and Startup
 
 1. Clone the repo:
+
 ```sh
 git clone https://github.com/caffeineeee/apollo-server-graphql-jwt-ts-simple-auth-backend.git
 ```
 
 2. Change directory:
+
 ```sh
 cd apollo-server-graphql-jwt-ts-simple-auth-backend
 ```
 
 3. Install dependencies:
+
 ```sh
 pnpm i
 ```
 
-1. Run `cp env.example .env` or copy the `env.example` file, rename it to `.env`.
+4. Run `cp env.example .env` or copy the `env.example` file, rename it to `.env`.
 
-2. Run `openssl rand -base64 33` in the terminal. Set it as the value of env variable `JWT_SECRET` in `.env` file.
+5. Run `openssl rand -base64 33` in the terminal. Set it as the value of env variable `JWT_SECRET` in `.env` file.
 
-3. Run the project in development mode:
+6. Run the project in development mode:
+
 ```sh
 pnpm dev
 ```
 
-1. Navigate to http://localhost:4000 to open the Apollo GraphQL Studio.
+7. Navigate to http://localhost:4000 to open the Apollo GraphQL Studio.
 
 ---
 
 To create a new local SQLite DB (with some seed data), run:
+
 ```sh
 pnpm seed
 ```
